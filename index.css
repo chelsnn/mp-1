@@ -17,6 +17,7 @@
 
 }
  nav {
+    width: 30%;
     background-color: darkcyan;
 
  }
@@ -24,4 +25,9 @@
  nav ul {
     padding-left: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
+
+ 
