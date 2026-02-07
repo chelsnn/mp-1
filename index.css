@@ -1,55 +1,299 @@
 *{
     margin:0;
     box-sizing: border-box;
+   
 }
-#page-wrapper{
-    width: 80vw; /* 80% of the screen */
-    background-color: #e9edc9;
-    margin: 0 auto;
-    height: 100vh;
+@font-face {
+    font-family: calcu;
+    src: url(LowresPixel-Regular.otf);
+}
+
+#projs, #container, footer, h5 {
+    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+}
+header {
+    font-size: calc(0.4vw + 0.5vh + 0.3vmin);
+   
     
 
+}
+#page-wrapper {
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/0a/c8/5e/0ac85eeb8231c1d96f359ba874c76d13.jpg);
+    background-attachment: fixed;
+   
+    
+    
+    background-color: #e9edc9;
+    width: 80vw;
 
 }
 
-#container{
-    width: 100%;
+body {
+    
+   
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+
+}
+#container {
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    
+    
+   
+   
+}
+
+
+main {
+   
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100%;
+   
+    text-align: center;
+
+   
+    
+    
+   
+    
+    
+    
+   
+}
+.talk {
+    background-color: #e9edc9;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 0;
+    text-align: left;
+}
+#edu {
+    margin-top: 40%;
+    width:100%;
 
 }
- nav {
-    width: 20vw;
-    height: 100vh;
-    background-color: #d4a373;
-    display: block;
-    text-decoration: none;
+.pname {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.pdetails {
+    text-indent: 15px;
 
+}
+
+.hm_link {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+
+}
+h2 {
+    margin-top: 15px;
+}
+
+.lis  {
+    
+    list-style-type: none;  
+    
+
+}
+.lis li {
+    margin:10px;
+}
+
+
+
+
+
+header{
+    
+    text-align: left;
+    padding-left: 10px;
+    background-color: #703d57;
+    color:#fefae0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+
+}
+#res {
+    
+   
+    
+    margin:10px;
+    
+    
+}
+
+
+img {
+    width: 200px;
+    height: auto;
+    margin:50px;
+    border-radius: 50%;
+   
+   
+}
+
+
+/* nav styling starts here*/
+ nav {
+    padding-top: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 30%;
+    
+    
+    background-color: #432818;
+    
  }
 
  nav ul {
-    padding-left: 0;
+    text-align: center;
+    padding:5px;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
  }
+
  nav li {
-    margin: 2%;
-    
+    padding: 7px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    background-color: #fefae0;
+
  }
 
  a, a:visited {
     text-decoration: none;
     color: #432818;
-    font-size: large;
+    
  }
- h1, p {
+
+ /* nav styling ends here*/
+ 
+
+footer {
+   
     text-align: center;
     background-color: #ccd5ae ;
     color: #432818;
- }
- h1 {
-    background-color: #ccd5ae ;
- }
+    height: 5%;
+    padding-top: 1.5%;
+
+    align-items: center;
+   
+    
+}
+
+/* CSS for calculator */
+#calculator {
+  
+    background-image: url(calc.png);
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+    background-position: center;
+    
+    width: 70%;
+    height: 70%;
+    margin-bottom: 20%;
+    padding: 20%; 
+    align-items: center;
+    
+   
+    
+    margin-top: 40px;
+    
+  
+    font-family: calcu;
+    
+    
+    
+    
+}
+
+
+#first, #second {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+   
+    width: 30%;
+    
+   
+}
+
+#calculator button {
+    margin: 2px;
+    background-color:cadetblue;
+}
+
+
+#projs {
+    list-style: none;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+     #container{
+        height:100%;
+        display: flex;
+        flex-direction: column; 
+     
+   }
+     main{
+        width: 100%;
+        padding-bottom: 100%;
+        
+
+        
+    }
+   
+  
+  
+   
+    header {
+        font-size: calc(0.8vw + 0.6vh + 0.6vmin);
+        
+        height: 10%;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    nav {
+        padding: 6px;
+        height:5%;
+        margin: 0;
+        width: 100%;   
+    }
+     nav ul {
+        height: 5%;
+        width: 100%;   
+    }
+   
+
+    nav li {
+        font-size: calc(0.7vw + 0.6vh + 0.6vmin);
+        width: 100%;
+        display: inline;
+        padding: 5px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+}
+
+
+
